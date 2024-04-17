@@ -50,7 +50,9 @@ crées sans changer le code qui utilise ces objets.
 ## Exercices 7
 
 ## Exercices 8
-
+-Le Patron de conception de la classe context avec ServiceLoader suit le patron de conception FACADE car en encapsulant la complexité de 'ServiceLoader' derrière une interface simplifiée, 'context' rend l'utilisation des services plus accessible et plus 
+simple pour les utilisateurs.Ce qui va permettre de centraliser la création et la gestion des instances , facilitant ainsi la maintenance et l'évolution de l'application.
+-Oui nous pouvons avoir plusiers lignes dans le fichier de services "fr.polytech.sim.cycling.Bike".Chaque ligne dans ce fichier va correspondre à une implémentation différente du type de service spécifié.'ServiceLoader' les utilisera pour charger toutes les implémentationsdisponibles du service
+l'utilisation de 'injectAll' va permettre d'itéree sur toutes les instances disponibles pour le type de service demandé 
 ## Exercices 9
-
-
+-La méthode "injectAll()" de la classe 'context' retourne un 'Iterator', ce qui correspondant  au patron de conception Iterateur.Ce patron permet d'accéder séquentiellement aux élements d'une collection sans exposer ses représentations sous-jacentes.Elle va fournir une façon standard de parcourir des collectionsnet est utilisé dans la bibliothèque standard java pour parcourir tout objet implémentant l'interface 'Iterable'
